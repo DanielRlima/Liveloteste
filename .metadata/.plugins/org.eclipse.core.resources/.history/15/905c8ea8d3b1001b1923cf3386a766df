@@ -1,0 +1,15 @@
+package runner;
+
+public class Executa {
+	
+	@RunWith ()
+	@CucumberOptions ()
+	
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ExecutaLivelo" project="LiveloTeste" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="runner.ExecutaLivelo" time="18.681">
+    <testsuite name="Entrar no site da Livelo" time="18.681">
+      <testcase name="Adicionar produtos no carrinho" classname="Entrar no site da Livelo" time="18.681">
+        <failure>
+          <expected>Produto</expected>
+          <actual>308.600 Pontos</actual>
+          org.junit.ComparisonFailure: expected:&lt;[Produto]&gt; but was:&lt;[308.600 Pontos]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at pages.MetodosLivelo.validarTexto(MetodosLivelo.java:46)&#13;
+	at tests.StepsLivelo.adicionar_no_carrinho(StepsLivelo.java:43)&#13;
+	at ✽.adicionar no carrinho(file:///C:/Users/Daniel%20Risc/eclipse-workspace/ProjetoLivelo/LiveloTeste/src/test/resources/features/teste.feature:12)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

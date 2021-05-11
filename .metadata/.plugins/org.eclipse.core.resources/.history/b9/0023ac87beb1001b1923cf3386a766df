@@ -1,0 +1,19 @@
+#Author: daniel.rlima@hotmail.com
+
+@tag
+Feature: Title of your feature
+  I want to use this template for my feature file
+
+Background: Consulta API
+				Given que eu esteja usando o verbo get
+				When acessar a rota correta
+				
+				Scenario status code
+				Then recebo status code 200
+				
+				Scenario time
+				Then valido o tempo de resposta
+				
+				Scenario response
+				Then valido o body response
+

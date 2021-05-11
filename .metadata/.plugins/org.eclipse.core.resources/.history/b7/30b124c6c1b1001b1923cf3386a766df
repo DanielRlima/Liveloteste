@@ -1,0 +1,17 @@
+#Author: your.email@your.domain.com
+
+Feature: Consultar Api
+  eu como usuario quero acessar a API e consultar
+
+	Background:
+		Given que eu esteja usando o verbo get
+		When acessar a rota correta
+		
+		Scenario: status code
+		Then recebo status code 200
+		
+		Scenario: Validar time
+		Then valido o tempo de resposta
+		
+		Scenario: Validar response
+		Then valido o body response

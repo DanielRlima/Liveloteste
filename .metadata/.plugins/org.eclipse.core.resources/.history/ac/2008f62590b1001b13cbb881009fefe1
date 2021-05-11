@@ -1,0 +1,66 @@
+package pages;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MetodosLivelo {
+
+	WebDriver driver;
+	
+
+	public void abrirNavegador(String urlApp) {
+
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get(urlApp);
+		driver.manage().window().maximize();
+
+	}
+
+	public void clicar(By elementos) {
+		driver.findElement(elementos).click();
+	}
+
+	public void pausa(int tempo) throws InterruptedException {
+		Thread.sleep(tempo);
+
+	}
+
+	public void esperaImplicita() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	}
+
+	public void preencher(By elementos, String texto) {
+		driver.findElement(elementos).sendKeys(texto);
+
+	}
+
+	/*public void validarTexto(By elementos, String txtEsperado) {
+		String textoCapturado = driver.findElement(elementos).getText();
+		System.out.println("O texto capturado: " + textoCapturado);
+		assertEquals(txtEsperado, textoCapturado);
+		
+	}
+	 /*public void validarTexto(By elementos, String texto) {
+	 
+	 WebElement paginaAtual = driver.findElement(By.xpath("\"//*[@id=\\\"CC-cart-list\\\"]/div[1]/h1\""));
+	 assertEquals("Seu carrinho", paginaAtual); 
+	 System.out.println("Por favor impirma o texto: " + paginaAtual);
+	 }
+	 
+
+	/*public void validarTexto(By elementos, String textoesperado) {
+		String textoElement = driver.findElement(By.xpath("//*[@id=\"CC-cart-list\"]/div[1]/h1")).getText();
+		assertEquals("Seu Carrinho", textoElement);
+		System.out.println("O texto esperado: " + textoElement);
+
+	}*/
+
+	
+}

@@ -1,0 +1,42 @@
+package elementos;
+
+import org.openqa.selenium.By;
+
+public class ElementosLivelo {
+
+	
+/////////CT01//////////
+	// digitar o produto celular e clicar em pesquisar//
+	public By digprod = By.cssSelector("#input-search");
+	public By pesquisar = By.id("span-searchIcon");
+
+	// clicar no produto celular//
+	public By cookies = By.id("btn-authorizeCoookies");
+	public By prodcelular = By.id("CC-product-list-name-LVL26907718-01");
+
+	// digitar o cep e clicar//
+	public By cep = By.xpath("//input[@id='inpt-cep__pdp']");
+	public By buscarCep = By.cssSelector("#wi4300078-product-filter-box-catalog-id > div > div.cep-tab > div.form > div > span.body-text.body-text--small.search");
+	// adicionar celular no carrinho//
+	public By adicionarcarrinho = By.cssSelector("#CC-prodDetails-addToCart > button");
+
+
+/////////CT02//////////
+	// clicar no produto Panela//
+	public By prodpanela = By.id("CC-product-list-name-LVL188691-01");
+	public By voltagem = By.id("#option-2");
+	
+/////////CT03//////////
+// clicar no produto Brinquedo//	
+	public By prodbrinquedo = By.id("CC-product-grid-title-LVL176471-00");
+	
+	public By removercarrinhcel = By.xpath("//a[@id='remove-ci13819381412501']");
+	public By removercarrinhpan = By.cssSelector("#minus-ci13866280396132");
+	public By removercarrinhobrin = By.cssSelector("#minus-ci18207322156411");
+	
+	
+	
+	
+	
+	
+}

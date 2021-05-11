@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ExecutaLivelo" project="LiveloTeste" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.ExecutaLivelo" time="25.05">
+    <testsuite name="Entrar no site da Livelo" time="25.05">
+      <testcase name="Adicionar produtos no carrinho" classname="Entrar no site da Livelo" time="25.05"/>
+    </testsuite>
+  </testsuite>
+</testrun>
